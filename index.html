@@ -1,124 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        input{
-            border: none;
-        }
-        input:focus{
-            outline: none;
-        }
-        table{
-            text-align: center;
-        }
-        td{
-            width: 100px;
-        }
-    </style>
+    <title>김소중</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <td>
-                합계 금액
-            </td>
-            <td>
-                <input id="num" type="number">
-            </td>
-            <td rowspan="4" style="width: 40px;">
-                <button onclick="calcul()" style="height: 100px;">입력</button>
-            </td>
-        </tr>
-        <!-- <tr>
-            <td>X %</td>
-            <td>
-                <input id="x" type="number">
-            </td>
-        </tr>
-        <tr>
-            <td>Y %</td>
-            <td>
-                <input id="y" type="number">
-            </td>
-        </tr> -->
-        <tr>
-            <td>단위</td>
-            <td>
-                <input id="unit" type="number">
-            </td>
-        </tr>
-    </table>
-
-    <table border="1" style="margin-top: 50px;">
-        <tr>
-            <td>X</td>
-            <td>
-                <p id="result"></p>
-            </td>
-        </tr>
-        <tr>
-            <td>Y</td>
-            <td>
-                <p id="result2"></p>
-            </td>
-        </tr>
-    </table>
-
-    <script>
-        const result = document.getElementById('result');
-        const result2 = document.getElementById('result2');
-        let num;
-        let num1;
-        let num2;
-        let div;
-        let bul;
-        let count;
-
-        function calcul(num) {
-            bul = true;
-            count = 0;
-
-            num = document.getElementById('num').value;
-            div = document.getElementById('unit').value;
-
-            num1 = num * 8.5;
-            num2 = num * 15 / 7;
-
-            while (bul){
-                adjust(num);
-            }
-            result.innerHTML = num1;
-            result2.innerHTML = num2;
-        }
-        
-        function adjust(num){
-            if (count < 10){
-                if (num2%div!=0) {
-                    num2 -= num2%div;
-                    num1 = ( num - (num2*0.07) ) / 0.1;
-                } else if (bul) {
-                    num2 -= div;
-                    num1 = ( num - (num2*0.07) ) / 0.1;
-                }
-                if (num1%div == 0){
-                    bul = false;
-                }
-            } else {
-                num2 += div;
-                num1 = ( num - (num2*0.07) ) / 0.1;
-            }
-
-            if (num1%div == 0){
-                bul = false;
-            }
-            count++;
-            if (count > 100){
-                bul = false;
-            }
-        }
-    </script>
+    <div class="top">
+        <div>
+            <div class="name">
+                김소중
+            </div>
+            <div class="contact">
+                <div class="github">
+                    <div>
+                        <img src="images/git.png" alt="github" class="default">
+                        <img src="images/git2.png" alt="github-hover" class="hover" onclick="window.open('about:blank').location.href ='https://github.com/KSJ0314';">
+                    </div>
+                    <div>
+                        <img src="images/velog.png" alt="github" class="default">
+                        <img src="images/velog2.png" alt="github-hover" class="hover" onclick="window.open('about:blank').location.href ='https://velog.io/@ksj0314/posts';">
+                    </div>
+                </div>
+                <div>
+                    <img src="images/email.png" alt="email">
+                    <div class="font15">sojung017@naver.com</div>
+                </div>
+                <div>
+                    <img src="images/tell.png" alt="tell">
+                    <div class="font15">010 - 2431 - 4307</div>
+                </div>
+            </div><!-- /.contact -->
+        </div>
+        <div>
+            <div class="content">
+                <ul>
+                    <li>자기소개</li>
+                    <li>자기소개</li>
+                    <li>자기소개</li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- /.top -->
+    <div class="line"></div>
+    <div>
+        <div class="title">
+            Education
+        </div>
+        <div class="edu">
+            <div>
+                <div class="date">
+                    2023. 06. ~ 2023. 12.
+                </div>
+                <div class="font13">
+                    광주국제직업전문학교
+                </div>
+            </div>
+            <div>
+                <div class="font13 text-center" style="font-style: italic;">
+                    자바와 스프링(Spring) + 스프링부트를 적용한 웹 개발자 양성
+                </div>
+                <ul>
+                    <li>내용용</li>
+                    <li>내용용</li>
+                    <li>내용용</li>
+                </ul>
+            </div>
+        </div><!-- /.edu -->
+    </div>
+    <div class="line"></div>
+    <div>
+        <div class="title">
+            Project
+        </div>
+    </div>
+    <div class="line"></div>
+    <div>
+        <div class="title">
+            Award
+        </div>
+    </div>
+    <div class="line"></div>
+    <div>
+        <div class="title">
+            스팩
+        </div>
+    </div>
+    <div class="line"></div>
+    <div>
+        <div class="title">
+            기술
+        </div>
+    </div>
+    <div class="line"></div>
 </body>
 </html>
