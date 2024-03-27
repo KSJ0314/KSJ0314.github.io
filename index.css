@@ -24,7 +24,7 @@ li{
     color: gray;
 }
 
-.it{
+.itl{
     font-style: italic;
 }
 
@@ -38,6 +38,10 @@ li{
     border-top: 0.1vw dashed #b3b3b3;
 }
 
+.pointer:hover{
+    cursor: pointer;
+}
+
 body > div {
     margin: 0 auto;
     width: 85%;
@@ -45,7 +49,7 @@ body > div {
 
 @media (min-width: 1200px) {
     body > div{
-        width: 75%;
+        width: 85%;
     }
 }
 
@@ -109,20 +113,20 @@ body > div {
     font-weight: bold;
 }
 
-.edu{
+.item{
     display: flex;
 }
 
-.edu .date {
+.item .date {
     font-weight: bold;
     color: gray;
     margin-bottom: 0.5vw;
 }
 
-.edu > div:first-child{
+.item > div:first-child{
     margin-right: 3vw;
     flex-shrink: 0;
 }
-.edu > div:nth-child(2){
+.item > div:nth-child(2){
     width: 100%;
 }
