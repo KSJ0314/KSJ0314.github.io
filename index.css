@@ -126,7 +126,50 @@ body > div {
 .item > div:first-child{
     margin-right: 3vw;
     flex-shrink: 0;
+    width: 22%;
 }
 .item > div:nth-child(2){
     width: 100%;
+}
+
+.language{
+    font-size: 1.3vw;
+    margin-top: 3vw;
+}
+
+.languages-bar{
+    width: 70%;
+    height: 0.5vw;
+    margin: 0.5vw 0;
+    border-radius: 1vw;
+    overflow: hidden;
+    display: flex;
+}
+.languages-bar > div:first-child,
+.languages > div:first-child > .circle{
+    background-color: orange;
+}
+.languages-bar > div:nth-child(2),
+.languages > div:nth-child(2) > .circle{
+    background-color: purple;
+}
+.languages-bar > div:nth-child(3),
+.languages > div:nth-child(3) > .circle{
+    background-color: red;
+}
+.languages-bar > div{
+    flex-shrink: 0;
+}
+.languages div, .languages span{
+    font-size: 1vw !important;
+}
+.languages > div{
+    display: flex;
+    align-items: center;
+}
+.circle{
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    margin: 0 0.3vw;
 }
