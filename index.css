@@ -105,6 +105,12 @@ body > div {
     transition: 0.2s;
 }
 
+.intro{
+    list-style: none;
+    border-left: 0.3vw solid lightgreen;
+    background-color: rgb(245, 245, 245);
+    padding-right: 2vw;
+}
 
 .title{
     font-size: 2.5vw;
