@@ -155,18 +155,22 @@ body > div {
     overflow: hidden;
     display: flex;
 }
-.languages-bar > div:first-child,
-.languages > div:first-child > .circle{
-    background-color: orange;
+.language .java{
+    background-color: #ed9820;
 }
-.languages-bar > div:nth-child(2),
-.languages > div:nth-child(2) > .circle{
-    background-color: purple;
+
+.language .css{
+    background-color: #563d7c;
 }
-.languages-bar > div:nth-child(3),
-.languages > div:nth-child(3) > .circle{
+
+.language .html{
     background-color: red;
 }
+
+.language .js{
+    background-color: #f1e05a;
+}
+
 .languages-bar > div{
     flex-shrink: 0;
 }
