@@ -256,6 +256,10 @@ body > div {
     max-height: 80%;
 }
 
+.teches:first-child{
+    background-color: blue;
+}
+
 .techInfo{
     box-sizing: border-box;
     border-radius: 10px;
@@ -297,4 +301,12 @@ body > div {
     background-color: transparent;
     border-color: transparent;
     cursor: pointer;
+}
+
+.upButton{
+    position: fixed;
+    width: 3vw;
+    height: 2vw;
+    bottom: 1vw;
+    right: 1vw;
 }
