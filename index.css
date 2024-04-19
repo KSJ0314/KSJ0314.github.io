@@ -261,8 +261,8 @@ body > div {
     border-radius: 10px;
     border: none;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 45%;
+    left: 50%;
     overflow: hidden;
     background-color: white;
     cursor: default;
