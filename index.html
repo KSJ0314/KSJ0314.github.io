@@ -51,7 +51,7 @@
         </div>
     </div><!-- /.top -->
     <div class="line"></div>
-    <div>
+    <div class="project">
         <div class="title">
             Project
         </div>
@@ -315,9 +315,9 @@
             </div>
         </div><!-- /.item -->
         
-    </div>
+    </div><!-- /.project -->
     <div class="line"></div>
-    <div>
+    <div class="award">
         <div class="title">
             Award
         </div>
@@ -334,9 +334,9 @@
                 <div class="font13 gray">오픈 API를 활용한 웹&앱 개발대회</div>
             </div>
         </div><!-- /.item -->
-    </div>
+    </div><!-- /.award -->
     <div class="line"></div>
-    <div>
+    <div class="edu">
         <div class="title">
             Education
         </div>
@@ -364,9 +364,9 @@
                 </ul>
             </div>
         </div><!-- /.item -->
-    </div>
+    </div><!-- /.edu -->
     <div class="line"></div>
-    <div>
+    <div class="spec">
         <div class="title">
             Spec
         </div>
@@ -417,18 +417,21 @@
                 </div>
             </div>
         </div><!-- /.item -->
-    </div>
+    </div><!-- /.spec -->
     <div class="line"></div>
-    <div>
+    <div class="technology">
         <div class="title">
             Technology
         </div>
-    </div>
+        <!-- 들어갈 값이 많아 데이터파일인 tech.json과 실행 구문인 techJs.js파일을 따로 생성 -->
+        <div class="teches" id="teches"></div>
+    </div><!-- /.technology -->
 
     <script>
         function newTap(link) {
             window.open('about:blank').location.href = link;
         };
     </script>
+    <script src="./techJs.js"></script>
 </body>
 </html>

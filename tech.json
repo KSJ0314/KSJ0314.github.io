@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "imgSrc": "./images/java.png",
+        "title": "Java",
+        "content": "0 content"
+    },
+    {
+        "id": 1,
+        "imgSrc": "./images/react.png",
+        "title": "React",
+        "content": "1 content"
+    },
+    {
+        "id": 2,
+        "imgSrc": "./images/html.png",
+        "title": "HTML",
+        "content": "2 content"
+    },
+    {
+        "id": 3,
+        "imgSrc": "./images/css.png",
+        "title": "CSS",
+        "content": "3 content"
+    },
+    {
+        "id": 4,
+        "imgSrc": "./images/js.png",
+        "title": "JavaScript",
+        "content": "4 content"
+    },
+    {
+        "id": 5,
+        "imgSrc": "./images/jq.png",
+        "title": "JQuery",
+        "content": "5 content"
+    },
+    {
+        "id": 6,
+        "imgSrc": "./images/mysql.png",
+        "title": "MySQL",
+        "content": "6 content"
+    },
+    {
+        "id": 7,
+        "imgSrc": "./images/oracle.png",
+        "title": "OracleDB",
+        "content": "6 content"
+    }
+]
