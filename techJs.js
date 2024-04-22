@@ -3,19 +3,23 @@ function generateTagsFromJSON() {
         .then(response => response.json()) // JSON 형식으로 변환
         .then(data => {
             var teches = document.getElementById('teches'); // 태그를 넣을 컨테이너 요소 가져오기
-            for (let i = 0; i < data.length; i += 4) { // 데이터 반복(4개씩)
+            var half = Math.ceil(data.length/2)
+            for (let i = 0; i < data.length; i += half) { // 데이터 반복(4개씩)
                 const floor = document.createElement('div'); // 새로운 tech div 태그 생성
                 floor.className = 'floor'; // 클래스 설정
 
-                for (let j = 0; j < 4; j++) {
+                for (let j = 0; j < half; j++) {
                     const item = data[i + j];
+                    if(item == null){
+                        break;
+                    }
 
                     const tech = document.createElement('div'); // 새로운 tech div 태그 생성
                     tech.className = 'tech'; // 클래스 설정
 
                     // 이미지 태그 생성
                     const img = document.createElement('img');
-                    img.src = item.imgSrc; // 이미지 소스 설정
+                    img.src = item.image; // 이미지 소스 설정
                     img.alt = item.title; // 대체 텍스트 설정
                     img.addEventListener('click', function() {
                         oepnTechInfo(tech);
@@ -34,24 +38,37 @@ function generateTagsFromJSON() {
                     tech.appendChild(img); // tech에 추가
 
                     // techInfo div 생성
-                    const techInfoDiv = document.createElement('div');
-                    techInfoDiv.className = 'techInfo';
+                    const techInfo = document.createElement('div');
+                    techInfo.className = 'techInfo';
 
                     // 두 번째 이미지 태그 생성
                     const img2 = document.createElement('img');
-                    img2.src = item.imgSrc; // 이미지 소스 설정
+                    img2.src = item.image; // 이미지 소스 설정
                     img2.alt = item.title; // 대체 텍스트 설정
-                    techInfoDiv.appendChild(img2); // techInfo에 추가
+                    techInfo.appendChild(img2); // techInfo에 추가
+
+                    // techInfo > div 생성
+                    const techInfoDiv = document.createElement('div');
+                    techInfoDiv.className = 'techInfoDiv';
 
                     // h1 태그 생성
-                    const h1 = document.createElement('h1');
-                    h1.textContent = item.title; // 제목 설정
-                    techInfoDiv.appendChild(h1); // techInfo에 추가
+                    const techInfoH1 = document.createElement('h1');
+                    techInfoH1.textContent = item.title; // 제목 설정
+                    techInfoDiv.appendChild(techInfoH1); // techInfoDiv에 추가
 
-                    // p 태그 생성
-                    const p = document.createElement('p');
-                    p.textContent = item.content; // 내용 설정
-                    techInfoDiv.appendChild(p); // techInfo에 추가
+                    // ul 태그 생성
+                    const techInfoUl = document.createElement('ul');
+                    
+                    item.contents.map(content=>{
+                        // li 태그 생성
+                        const techInfoLi = document.createElement('li');
+                        techInfoLi.textContent = content; // 내용 설정
+                        techInfoUl.appendChild(techInfoLi); // techInfoUl에 추가
+                    })
+
+                    techInfoDiv.appendChild(techInfoUl); // techInfoDiv에 추가
+
+                    techInfo.appendChild(techInfoDiv); // techInfo에 추가
 
                     // 버튼 태그 생성
                     const button = document.createElement('button');
@@ -59,9 +76,9 @@ function generateTagsFromJSON() {
                     button.addEventListener('click', function() {
                         closeTechInfo(tech);
                     }); // 클릭 이벤트 추가
-                    techInfoDiv.appendChild(button); // techInfo에 추가
+                    techInfo.appendChild(button); // techInfo에 추가
 
-                    tech.appendChild(techInfoDiv); // tech에 techInfo 추가
+                    tech.appendChild(techInfo); // tech에 techInfo 추가
                     floor.appendChild(tech); // floor에 생성한 tech 추가
                 }
                 teches.appendChild(floor); // floor에 생성한 tech 추가
