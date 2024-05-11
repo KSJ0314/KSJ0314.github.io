@@ -313,4 +313,5 @@ body > div {
     height: 2vw;
     bottom: 1vw;
     right: 1vw;
+    cursor: pointer;
 }
