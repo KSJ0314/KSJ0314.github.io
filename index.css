@@ -4,6 +4,14 @@
     font-size: 1.5vw;
 }
 
+.down{
+    width: 3vw;
+    height: 3vw;
+    position: fixed;
+    top: 1vw;
+    right: 1vw;
+}
+
 li{
     margin: 1vw 0 1vw 2.5vw;
 }
