@@ -4,70 +4,241 @@
     <meta charset="UTF-8">
     <link rel="icon" href="./images/minimi.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://ksj0314.github.io/" />
-    <meta property="og:title" content="성장하는 개발자 김소중의 이력서입니다." />
-    <meta property="og:description" content="저의 이력서로 당신을 초대합니다!" />
-    <meta property="og:image" content="./images/ogminimi.png" />
-    <title>Resume: SoJung Kim</title>
-    <link rel="stylesheet" href="index.css">
+    <title>forPDF</title>
+    <link rel="stylesheet" href="forPDF.css">
 </head>
 <body>
     <div class="top">
-        <div>
-            <div class="name">
-                김소중
+        <div class="name">
+            김소중
+        </div>
+        <div class="top-contact">
+            <ul class="intro">
+                <li>
+                    <b>'목표는 풀스택!'</b>
+                    <p>&ensp;끊임없는 성장을 추구하는 저는 프론트엔드부터 시작해</p>
+                    <p>&ensp;풀스택 개발자로 성장하는것이 꿈입니다.</p>
+                </li>
+                <li>
+                    <b>'안되는 기능은 없다.'</b>
+                    <p>&ensp;요즘 세상에 검색해서 안 나오는건 없다고 생각합니다. 안되면 될 때 까지!</p>
+                </li>
+                <li>
+                    <b>'나중에 고생하지 말자.'</b>
+                    <p>&ensp;코드는 언제든 수정되기 마련, 유지보수를 위한 가독성 좋은 코드를 선호하며</p>
+                    <p>&ensp;누구나 이해할 수 있도록 주석 작성의 습관을 들이려 노력하고 있습니다.</p>
+                </li>
+            </ul>
+            <div class="contact">
+                <div>
+                    <img src="images/minimiIcon.png" alt="tell">
+                    <div class="font13">ksj0314.github.io/my-portfolio</div>
+                </div>
+                <div>
+                    <img src="images/git.png" alt="tell">
+                    <div class="font13">github.com/KSJ0314</div>
+                </div>
+                <div>
+                    <img src="images/velog.png" alt="tell">
+                    <div class="font13">velog.io/@ksj0314/posts</div>
+                </div>
+                <div>
+                    <img src="images/birth.png" alt="tell">
+                    <div class="font13">1997. 10. 19.</div>
+                </div>
+                <div>
+                    <img src="images/home.png" alt="tell">
+                    <div class="font13">나주시 빛가람동</div>
+                </div>
+                <div>
+                    <img src="images/tell.png" alt="tell">
+                    <div class="font13">010 - 2431 - 4307</div>
+                </div>
+                <div>
+                    <img src="images/email.png" alt="email">
+                    <div class="font13">sojung017@naver.com</div>
+                </div>
+            </div><!-- /.contact -->
+        </div>
+    </div><!-- /.top -->
+    <div class="line"></div>
+    <div class="spec">
+        <div class="title">
+            Spec
+        </div>
+        <div class="item">
+            <div>
+                <div class="date font18">
+                    2024. 02.
+                </div>
             </div>
             <div>
-                <ul class="intro">
+                <div class="font18">
+                    컴퓨터공학사
+                </div>
+                <div class="font13 gray">
+                    국가평생교육진흥원
+                </div>
+            </div>
+        </div><!-- /.item -->
+        <div class="dashline"></div>
+        <div class="item">
+            <div>
+                <div class="date font18">
+                    2023. 09.
+                </div>
+            </div>
+            <div>
+                <div class="font18">
+                    정보처리기사
+                </div>
+                <div class="font13 gray">
+                    한국산업인력공단
+                </div>
+            </div>
+        </div><!-- /.item -->
+        <div class="dashline"></div>
+        <div class="item">
+            <div>
+                <div class="date font18">
+                    2023. 06.
+                </div>
+            </div>
+            <div>
+                <div class="font18">
+                    리눅스마스터 2급
+                </div>
+                <div class="font13 gray">
+                    한국정보통신진흥협회
+                </div>
+            </div>
+        </div><!-- /.item -->
+    </div><!-- /.spec -->
+    <div class="line"></div>
+    <div class="skill">
+        <div class="title">
+            Skill
+        </div>
+        <div class="skills">
+            <div>
+                <img src="images/java.png" alt="java">
+                <div>
+                    <b class="font18">Java</b>
+                    <ul>
+                        <li>객체지향 프로그래밍에 대해 이해하고 있습니다</li>
+                        <li>MVC 패턴에 대해 이해하고 있으며 JSP를 이용한 웹 프로젝트 경험이 있습니다.</li>
+                        <li>JSP를 이용한 웹 페이지를 토대로 Spring 웹 페이지 구현이 가능합니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dashline"></div>
+        <div class="skills">
+            <div>
+                <img src="images/react.png" alt="java">
+                <div>
+                    <b class="font18">React</b>
+                    <ul>
+                        <li>Component의 rendering을 통한 SPA 구조를 이해하고 있습니다.</li>
+                        <li>React Hooks을 활용한 함수형 컴포넌트를 사용할 수 있으며 다양한 훅을 활용하여 상태 관리, 생명주기 처리, 컨텍스트 등을 다룰 수 있습니다.</li>
+                        <li>styled-components를 사용하여 컴포넌트의 스타일링을 유연하게 처리할 수 있습니다. 또한, ThemeProvider를 활용하여 전체적인 테마를 쉽게 관리하고 적용할 수 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dashline"></div>
+        <div class="skills">
+            <div>
+                <img src="images/html_css.png" alt="java">
+                <div>
+                    <b class="font18">HTML / CSS</b>
+                    <ul>
+                        <li>시맨틱한 태그를 사용하여 의미 있는 웹 페이지의 구조를 표현할 수 있습니다.</li>
+                        <li>다양한 선택자와 속성을 사용하여 레이아웃을 디자인할 수 있으며 Flexbox를 활용하여 유연한 레이아웃을 설계하고 정렬할 수 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dashline"></div>
+        <div class="skills">
+            <div>
+                <img src="images/js.png" alt="java">
+                <div>
+                    <b class="font18">JavaScript</b>
+                    <ul>
+                        <li>웹 페이지의 동적 요소를 조작하고 상호작용하기 위해 DOM과 이벤트 처리에 대한 이해가 있습니다.</li>
+                        <li>Ajax를 사용하여 서버와 비동기적으로 데이터를 주고받을 수 있습니다.</li>
+                        <li>jQuery를 활용하여 DOM 조작, 이벤트 핸들링, 애니메이션 등을 쉽게 구현할 수 있습니다.</li>
+                        <li>기존의 HTML 페이지에 React 컴포넌트를 추가하여 동적인 UI를 구현할 수 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dashline"></div>
+        <div class="skills">
+            <div>
+                <img src="images/oracle.png" alt="java">
+                <div>
+                    <b class="font18">MySQL / OracleDB</b>
+                    <ul>
+                        <li>데이터베이스 관리 시스템으로 MySQL과 OraclDB를 사용할 수 있습니다.</li>
+                        <li>JSP, Spring에서 DB를 연결하고 쿼리문을 이용해 모델을 관리할 수 있습니다.</li>
+                        <li>트리거를 사용하여 특정 조건에서 자동으로 로그를 기록하는 등의 작업을 구현할 수 있습니다.</li>
+                        <li>프로시저를 사용하여 반복적으로 수행되는 작업을 하나의 논리적인 단위로 묶어서 실행할 수 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.skill -->
+    <div class="line"></div>
+    <div class="award">
+        <div class="title">
+            Award
+        </div>
+        <div class="item">
+            <div>
+                <div class="date font18">
+                    2023. 07. ~ 2023. 08.
+                </div>
+            </div>
+            <div>
+                <div class="font18">
+                    광전 IT - 코드마스터 선발 대회 장려상<br>
+                </div>
+                <div class="font13 gray">오픈 API를 활용한 웹&앱 개발대회</div>
+            </div>
+        </div><!-- /.item -->
+    </div><!-- /.award -->
+    <div class="line"></div>
+    <div class="edu">
+        <div class="title">
+            Education
+        </div>
+        <div class="item">
+            <div>
+                <div class="date font18">
+                    2023. 06. ~ 2023. 12.
+                </div>
+                <div class="font13 gray">
+                    광주국제직업전문학교
+                </div>
+            </div>
+            <div>
+                <div class="font18 itl">
+                    자바와 스프링(Spring) + 스프링부트를 적용한 웹 개발자 양성
+                </div>
+                <ul>
                     <li>
-                        <p>'목표는 풀스택!'</p>
-                        <p>&ensp;끊임없는 성장을 추구하는 저는 프론트엔드부터 시작해</p>
-                        <p>&ensp;풀스택 개발자로 성장하는것이 꿈입니다.</p>
+                        입문 개발자를 위한 국비 교육 과정입니다.<br/>
+                        6개월간 Java, HTML/CSS, JS, MySQL, OracleDB, JSP, Spring에 대해 학습하였습니다.
                     </li>
                     <li>
-                        <p>'안되는 기능은 없다.'</p>
-                        <p>&ensp;요즘 세상에 검색해서 안 나오는건 없다고 생각합니다. 안되면 될 때 까지!</p>
-                    </li>
-                    <li>
-                        <p>'나중에 고생하지 말자.'</p>
-                        <p>&ensp;코드는 언제든 수정되기 마련, 유지보수를 위한 가독성 좋은 코드를 선호하며</p>
-                        <p>&ensp;누구나 이해할 수 있도록 주석 작성의 습관을 들이려 노력하고 있습니다.</p>
+                        과정 중간중간 진행한 개인, 팀프로젝트와 NCS 기반 테스트를 통해 얻은 최종 성적평가에서 최우수상을 수상했습니다.
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="contact">
-            <div class="github">
-                <div>
-                    <img src="images/minimiIcon.png" alt="pf" class="default linkBtn" data-link="https://ksj0314.github.io/my-portfolio/">
-                </div>
-                <div>
-                    <img src="images/git.png" alt="github" class="default">
-                    <img src="images/git2.png" alt="github-hover" class="hover linkBtn" data-link="https://github.com/KSJ0314" >
-                </div>
-                <div>
-                    <img src="images/velog.png" alt="velog" class="default">
-                    <img src="images/velog2.png" alt="velog-hover" class="hover linkBtn" data-link="https://velog.io/@ksj0314/posts" >
-                </div>
-            </div>
-            <div>
-                <img src="images/birth.png" alt="tell">
-                <div class="font13">1997. 10. 19.</div>
-            </div>
-            <div>
-                <img src="images/home.png" alt="tell">
-                <div class="font13">나주시 빛가람동</div>
-            </div>
-            <div>
-                <img src="images/tell.png" alt="tell">
-                <div class="font13">010 - 2431 - 4307</div>
-            </div>
-            <div>
-                <img src="images/email.png" alt="email">
-                <div class="font13">sojung017@naver.com</div>
-            </div>
-        </div><!-- /.contact -->
-    </div><!-- /.top -->
+        </div><!-- /.item -->
+    </div><!-- /.edu -->
     <div class="line"></div>
     <div class="project">
         <div class="title">
@@ -80,14 +251,7 @@
                     ~ 23. 08. 17.
                 </div>
                 <div class="project-shortcut">
-                    <div>
-                        <img src="images/git.png" alt="github" class="default">
-                        <img src="images/git2.png" alt="github-hover" class="hover linkBtn" data-link="https://github.com/KSJ0314/What_to_eat_today" >
-                    </div>
-                    <div>
-                        <img src="images/velog.png" alt="velog" class="default">
-                        <img src="images/velog2.png" alt="velog-hover" class="hover linkBtn" data-link="https://velog.io/@ksj0314/j3yrq4nx" >
-                    </div>
+                    https://github.com/KSJ0314/What_to_eat_today
                 </div>
                 <div class="language">
                     Languages
@@ -151,14 +315,7 @@
                     ~ 23. 12. 12.
                 </div>
                 <div class="project-shortcut">
-                    <div>
-                        <img src="images/git.png" alt="github" class="default">
-                        <img src="images/git2.png" alt="github-hover" class="hover linkBtn" data-link="https://github.com/KSJ0314/Star" >
-                    </div>
-                    <div>
-                        <img src="images/velog.png" alt="velog" class="default">
-                        <img src="images/velog2.png" alt="velog-hover" class="hover linkBtn" data-link="https://velog.io/@ksj0314/%EB%B3%84%EB%8B%A4%EB%B3%84-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EB%A6%AC%EB%B7%B0-%EB%AA%A8%EC%95%84%EB%B3%B4%EA%B8%B0" >
-                    </div>
+                    https://github.com/KSJ0314/Star
                 </div>
                 <div class="language">
                     Languages
@@ -219,14 +376,7 @@
                     ~ 23. 11. 17.
                 </div>
                 <div class="project-shortcut">
-                    <div>
-                        <img src="images/git.png" alt="github" class="default">
-                        <img src="images/git2.png" alt="github-hover" class="hover linkBtn" data-link="https://github.com/KSJ0314/Cyworld_for_JSP" >
-                    </div>
-                    <div>
-                        <img src="images/velog.png" alt="velog" class="default">
-                        <img src="images/velog2.png" alt="velog-hover" class="hover linkBtn" data-link="https://velog.io/@ksj0314/JSP%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-Cyworld" >
-                    </div>
+                    https://github.com/KSJ0314/Cyworld_for_JSP
                 </div>
                 <div class="language">
                     Languages
@@ -287,14 +437,7 @@
                     ~ 23. 08. 18.
                 </div>
                 <div class="project-shortcut">
-                    <div>
-                        <img src="images/git.png" alt="github" class="default">
-                        <img src="images/git2.png" alt="github-hover" class="hover linkBtn" data-link="https://github.com/KSJ0314/Mini-MapleStory" >
-                    </div>
-                    <div>
-                        <img src="images/velog.png" alt="velog" class="default">
-                        <img src="images/velog2.png" alt="velog-hover" class="hover linkBtn" data-link="https://velog.io/@ksj0314/Mini-MapleStory" >
-                    </div>
+                    https://github.com/KSJ0314/Mini-MapleStory
                 </div>
                 <div class="language">
                     Languages
@@ -333,134 +476,6 @@
                 </ul>
             </div>
         </div><!-- /.item -->
-        
     </div><!-- /.project -->
-    <div class="line"></div>
-    <div class="award">
-        <div class="title">
-            Award
-        </div>
-        <div class="item">
-            <div>
-                <div class="date font18">
-                    2023. 07. ~ 2023. 08.
-                </div>
-            </div>
-            <div>
-                <div class="font18">
-                    광전 IT - 코드마스터 선발 대회 장려상<br>
-                </div>
-                <div class="font13 gray">오픈 API를 활용한 웹&앱 개발대회</div>
-            </div>
-        </div><!-- /.item -->
-    </div><!-- /.award -->
-    <div class="line"></div>
-    <div class="edu">
-        <div class="title">
-            Education
-        </div>
-        <div class="item">
-            <div>
-                <div class="date font18">
-                    2023. 06. ~ 2023. 12.
-                </div>
-                <div class="font13 gray">
-                    광주국제직업전문학교
-                </div>
-            </div>
-            <div>
-                <div class="font18 itl">
-                    자바와 스프링(Spring) + 스프링부트를 적용한 웹 개발자 양성
-                </div>
-                <ul>
-                    <li>
-                        입문 개발자를 위한 국비 교육 과정입니다.<br/>
-                        6개월간 Java, HTML/CSS, JS, MySQL, OracleDB, JSP, Spring에 대해 학습하였습니다.
-                    </li>
-                    <li>
-                        과정 중간중간 진행한 개인, 팀프로젝트와 NCS 기반 테스트를 통해 얻은 최종 성적평가에서 최우수상을 수상했습니다.
-                    </li>
-                </ul>
-            </div>
-        </div><!-- /.item -->
-    </div><!-- /.edu -->
-    <div class="line"></div>
-    <div class="spec">
-        <div class="title">
-            Spec
-        </div>
-        <div class="item">
-            <div>
-                <div class="date font18">
-                    2024. 02.
-                </div>
-            </div>
-            <div>
-                <div class="font18">
-                    컴퓨터공학사
-                </div>
-                <div class="font13 gray">
-                    국가평생교육진흥원
-                </div>
-            </div>
-        </div><!-- /.item -->
-        <div class="dashline"></div>
-        <div class="item">
-            <div>
-                <div class="date font18">
-                    2023. 09.
-                </div>
-            </div>
-            <div>
-                <div class="font18">
-                    정보처리기사
-                </div>
-                <div class="font13 gray">
-                    한국산업인력공단
-                </div>
-            </div>
-        </div><!-- /.item -->
-        <div class="dashline"></div>
-        <div class="item">
-            <div>
-                <div class="date font18">
-                    2023. 06.
-                </div>
-            </div>
-            <div>
-                <div class="font18">
-                    리눅스마스터 2급
-                </div>
-                <div class="font13 gray">
-                    한국정보통신진흥협회
-                </div>
-            </div>
-        </div><!-- /.item -->
-    </div><!-- /.spec -->
-    <div class="line"></div>
-    <div class="technology">
-        <div class="title">
-            Skill
-            <div class="font12 gray">
-                아이콘을 클릭하거나 마우스를 올려주세요!
-            </div>
-        </div>
-        <!-- 들어갈 값이 많아 데이터파일인 tech.json과 실행 구문인 techJs.js파일을 따로 생성 -->
-        <div class="teches" id="teches"></div>
-    </div><!-- /.technology -->
-
-
-    <img class="upButton" src="./images/up.png" onClick="window.scrollTo(0, 0);" />
-
-    <script>
-        var linkBtns = document.querySelectorAll('.linkBtn');
-        linkBtns.forEach((linkBtn) => {
-            linkBtn.addEventListener('click', () => {
-                var link = linkBtn.getAttribute('data-link');
-                window.open(link, '_blank');
-            });
-        });
-    </script>
-    <script src="./techJs.js"></script>
 </body>
 </html>
